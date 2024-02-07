@@ -7,8 +7,8 @@ const app: express.Application = express();
 const transporter: Transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-    user: 'your_email@gmail.com',
-    pass: 'your_password',
+    user: 'longmengua@gmail.com',
+    pass: 'yiyo xjlu ljen shqz',
   },
 });
 
@@ -16,8 +16,8 @@ const transporter: Transporter = nodemailer.createTransport({
 app.get('/send-email', (req: Request, res: Response) => {
   // Define email options
   const mailOptions: nodemailer.SendMailOptions = {
-    from: 'your_email@gmail.com',
-    to: 'recipient@example.com',
+    from: 'longmengua@gmail.com',
+    to: 'waltor.huang@gmail.com',
     subject: 'Test Email',
     text: 'This is a test email sent from Node.js using Gmail SMTP server within Express server.',
   };
@@ -35,7 +35,7 @@ app.get('/send-email', (req: Request, res: Response) => {
 });
 
 // Start the server
-const PORT: number = 3000;
+const PORT: number = 80;
 app.listen(PORT, () => {
   console.log(`Server is listening on port ${PORT}`);
 });
