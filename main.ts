@@ -17,9 +17,9 @@ app.get('/send-email', (req: Request, res: Response) => {
   // Define email options
   const mailOptions: nodemailer.SendMailOptions = {
     from: 'longmengua@gmail.com',
-    to: 'waltor.huang@gmail.com',
-    subject: 'Test Email',
-    text: 'This is a test email sent from Node.js using Gmail SMTP server within Express server.',
+    to: 'hramosece@gmail.com',
+    subject: 'Hello Honey!',
+    text: 'Hello Honey!',
   };
 
   // Send email
@@ -35,7 +35,7 @@ app.get('/send-email', (req: Request, res: Response) => {
 });
 
 // Start the server
-const PORT: number = 80;
+const PORT: number = 3000;
 app.listen(PORT, () => {
   console.log(`Server is listening on port ${PORT}`);
 });
